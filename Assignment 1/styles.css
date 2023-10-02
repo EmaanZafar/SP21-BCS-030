@@ -1,0 +1,124 @@
+
+header {
+    background-color: rgb(112, 93, 216);
+    color: #fff;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.profile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 10px; 
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+.profile-image img{
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-column {
+    float: left;
+    width: 20%;
+    background-color: #ae85f0;
+    padding: 20px;
+    height: 129vh;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Left Column Content */
+.left-column-content {
+    padding-top: 100px;
+    margin-bottom: 20px; 
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+
+/* Left Column Border */
+.left-column-border {
+    border-left: 1px solid #ccc; /* Add a subtle left border */
+}
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+
+.header-top {
+    text-align: left;
+}
+
+.header-top h1 {
+    margin-left: 200px;
+    font-size: 36px;
+}
+
+.header-bottom {
+    font-size: 18px;
+    margin-top: 200px;
+}
+
+/* Right Content */
+.right-content {
+    float: right;
+    width: 30%;
+    border-left: 2px solid #333;
+    padding-left: 20px;
+    background-color: #b4bbe2; 
+    border: 2px solid #ccc; 
+}
+
+.left-content {
+    padding-left: 270px;
+}
+
+/* Section Headings */
+section h2 {
+    color: #333;
+    border-bottom: 3px solid #333;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 24px;
+}
+
+/* Section Content */
+section p {
+    margin: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #09236b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+
