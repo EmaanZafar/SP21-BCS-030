@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Book Nook</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cafe Book Nook</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sign_up.html">Sign Up</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="welcome" class="hero text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to Cafe Book Nook</h1>
+      <p class="lead">A Place Where Coffee Meets Adventure</p>
+      <a href="#menu" class="btn btn-primary btn-lg">Explore Menu</a>
+    </div>
+  </section>
+
+  <section class="about text-center py-5">
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle-content">
+          <h2>About Us</h2>
+          <p>Welcome to Cafe Book Nook, where every cup of coffee comes with a side of adventure. Dive into our world of books, brews, and beyond. Explore new stories and flavors with us!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+ <!-- Menu Section -->
+<section id="menu" class="menu text-center py-5">
+    <div class="container">
+        <h2>Our Menu</h2>
+        <!-- Add your menu items here -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="circular-card">
+                    <div class="circular-image">
+                        <img src="cappucino.jpg" class="card-img-top" alt="Coffee 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="card-text">A classic espresso drink with steamed milk and foam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="circular-card">
+                    <div class="circular-image">
+                        <img src="latte.jpg" class="card-img-top" alt="Coffee 2">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Latte</h5>
+                        <p class="card-text">Espresso and steamed milk, topped with a small amount of foam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="circular-card">
+                    <div class="circular-image">
+                        <img src="espresso.webp" class="card-img-top" alt="Coffee 3">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso</h5>
+                        <p class="card-text">A concentrated coffee brewed by forcing a small amount of nearly boiling water through finely-ground beans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Events Section -->
+<section id="events" class="events text-center py-5" style="background-image: url('events-background.jpg');">
+    <div class="container">
+        <h2>Upcoming Events</h2>
+        <!-- Add your events here -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="circular-card">
+                    <div class="circular-image">
+                        <img src="book club.jpg" class="img-fluid" alt="Event 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Book Club Meeting</h5>
+                        <p class="card-text">Join us for a discussion on the latest bestseller!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="circular-card">
+                    <div class="circular-image">
+                        <img src="live music.jpg" class="img-fluid" alt="Event 2">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Live Music Night</h5>
+                        <p class="card-text">Enjoy live music with your favorite coffee.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="circular-card">
+                    <div class="circular-image">
+                        <img src="trivia.jpg" class="img-fluid" alt="Event 3">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Trivia Quiz</h5>
+                        <p class="card-text">Test your knowledge and win exciting prizes!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact text-center py-5" style="background-image: url('contact-background.jpg');">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Reach out for any inquiries or just to say hi.</p>
+      <a href="mailto:info@cafebooknook.com" class="btn btn-primary btn-lg mt-3">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-center py-4" style="background-color: #8B4513;">
+    <p>&copy; 2023 Cafe Book Nook</p>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="sign_up.js"></script>
+
+</body>
+</html>
