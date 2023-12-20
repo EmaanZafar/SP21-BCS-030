@@ -1,0 +1,135 @@
+<!-- menu.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">THE MENU</h1>
+        <div class="horizontal-tabs">
+            <a href="/menu?category=Coffee" class="tablink w3-hover-red <%= category === 'Coffee' ? 'w3-red' : '' %>">Coffee</a>
+            <a href="/menu?category=Dessert" class="tablink w3-hover-red <%= category === 'Dessert' ? 'w3-red' : '' %>">Dessert</a>
+            <a href="/menu?category=Starter" class="tablink w3-hover-red <%= category === 'Starter' ? 'w3-red' : '' %>">Starter</a>
+        </div>
+
+        <div class="row">
+            <div id="Coffee" class="menu-section">
+                <% menu_items.filter(item => item.category === 'Coffee').forEach(menu_item => { %>
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title text-centre"><%= menu_item.name %></h2>
+                                <h5 class="text-centre"><%= menu_item.price %></h5>
+                                <div class="btn">
+                                    <button onclick="window.location.href='/cart'" type ="button">
+                                        Add to Cart
+                                        <i>
+                                            <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-cart-plus"
+                                            viewBox="0 0 16 16"
+                                            >
+                                            <path
+                                            d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"
+                                            />
+                                            <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                                            />
+                                        </svg>
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+            <div id="Dessert" class="menu-section">
+                <% menu_items.filter(item => item.category === 'Dessert').forEach(menu_item => { %>
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title text-centre"><%= menu_item.name %></h2>
+                                <h5 class="text-centre"><%= menu_item.price %></h5>
+                                <div class="btn">
+                                    <button onclick="window.location.href='/cart'" type ="button">
+                                        Add to Cart
+                                        <i>
+                                            <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-cart-plus"
+                                            viewBox="0 0 16 16"
+                                            >
+                                            <path
+                                            d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"
+                                            />
+                                            <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                                            />
+                                        </svg>
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+            <!-- Starter Section -->
+            <div id="Starter" class="menu-section">
+                <% menu_items.filter(item => item.category === 'Starter').forEach(menu_item => { %>
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title text-centre"><%= menu_item.name %></h2>
+                                <h5 class="text-centre"><%= menu_item.price %></h5>
+                                <div class="btn">
+                                    <button onclick="window.location.href='/cart'" type ="button">
+                                        Add to Cart
+                                        <i>
+                                            <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-cart-plus"
+                                            viewBox="0 0 16 16"
+                                            >
+                                            <path
+                                            d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"
+                                            />
+                                            <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                                            />
+                                        </svg>
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+ 
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include your menu.js file -->
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
