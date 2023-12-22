@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete any  Item</title>
+  <style>
+    body {
+
+      background-color: #f8f9fa;
+    }
+
+    .block {
+      margin: 20px;
+    }
+
+    .card {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+      padding: 20px;
+      color: black;
+    }
+
+    .card-title {
+      color: black;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .card h5 {
+      color: black;
+    }
+
+    .btn button {
+      background-color: #D2B48C;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn button:hover {
+      background-color: #138496;
+    }
+  </style>
+</head>
+<body>
+    <div class="block">
+        <div class="row">
+          <% menu_items.forEach(menu_item => { %>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title text-centre"><%= menu_item.name %></h2>
+                <h5 class="text-centre"><%= menu_item.price %></h5>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+        </div>
+      </div> 
+      <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center mt-4">
+          <% for (let i = 1; i <= totalPages; i++) { %>
+          <li class="page-item <%= i === page ? 'active' : '' %>">
+            <a class="page-link" href="/all/<%= i %>"><%= i %></a>
+          </li>
+          <% } %>
+        </ul>
+      </nav>
+</body>

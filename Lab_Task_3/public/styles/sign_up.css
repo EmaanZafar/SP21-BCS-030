@@ -1,0 +1,43 @@
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+body {
+    background-color: #f8f9fa; /* Set a neutral background color */
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: white; /* Set a dark text color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    border: #D2B48C;
+    background-color: #D2B48C; /* Set a primary button color */
+}
+
+.mt-3 {
+    color: white;
+    margin-top: 20px;
+}
+
+/* Center the "Already have an account?" message */
+.mt-3 a {
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+label {
+    color: white;
+}

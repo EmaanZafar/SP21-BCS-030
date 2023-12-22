@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Item</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #17a2b8;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #138496;
+    }
+  </style>
+</head>
+
+<form action="" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        value="<%= menu_item.name %>"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <input
+        type="text"
+        class="form-control"
+        id="description"
+        name="description"
+        value="<%= menu_item.name %>"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label>
+      <input
+        type="text"
+        class="form-control"
+        id="price"
+        name="price"
+        value="<%= menu_item.price %>"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="category" class="form-label">category</label>
+      <input
+        type="text"
+        class="form-control"
+        id="category"
+        name="category"
+        value="<%= menu_item.name %>"
+      />
+    </div>
+    <button class="btn btn-info" type="submit">Edit Menu</button>
+  </form>
+  
